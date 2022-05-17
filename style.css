@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 5px;
+    margin:0 auto;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo span{
+    display: none;
+}
+
+.searchField{
+    align-self: center;
+}
+
+.searchField #searchMe{
+    width:30em;
+    padding:.5em;
+}
+
+.searchField > button{
+    background-color: aliceblue;
+    border:none;
+    padding: .57em;
+    cursor: pointer;
+
+}
+
+.icongroup > .fa{
+    margin-left: .9em;
+
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    background-color: blueviolet;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 0;
+  }
+
+  .subsub{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+  }
+
+  .sidenav div ul li {
+    padding: 2px 2px 2px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav li:hover {
+    color: #f1f1f1;
+  }
+  
+  /* .sidebar .closebtn {
+    position: absolute;
+    top: 10;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #f1f1f1;
+  }
+   */
+  
+
+
+.mainSection{
+    background-color: aquamarine;
+    display: flex;
+    /* padding: 3%;
+    width: 92%; */
+    margin: 0 auto;
+}
+
+.mainSection .sidebar{
+    background-color: blueviolet;
+    margin-right: 10px;
+    width: 400px;
+    
+    
+}
+
+.mainSection .sidebar div{
+    border-bottom: 5px #fff;
+    margin-bottom: 10px;
+    margin: 9px;
+}
+
+.mainSection .sidebar div ul li{
+    margin-bottom: 10px;
+}
+
+.videopage{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.videopage .cardvid{
+    margin: .9em;
+    background-color: green;
+    width:280px;
+    height:280px;
+}
+
+.videopage .cardvid .vid{
+    
+    background-color: yellow;
+    width:280px;
+    height:180px;
+    
+}
+
+.videopage .cardvid .caption{
+    background-color: aliceblue;
+    height:99px;
+
+}
+
+.videopage .cardvid .caption .head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+iframe{
+    border:none;
+    outline:none;
+}
+
+@media only screen and (max-width:1000px) {
+    .sidebar{
+        display: none;
+    }
+
+    .navbar .logo span{
+        margin-right: 20px;
+        display: block;
+    }
+    
+}
+
+@media only screen and (min-width:1000px){
+    .subsub{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .searchField #searchMe{
+        display:none;
+    }
+    
+}
