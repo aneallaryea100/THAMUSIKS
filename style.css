@@ -76,23 +76,11 @@
     color: #f1f1f1;
   }
   
-  /* .sidebar .closebtn {
-    position: absolute;
-    top: 10;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: #f1f1f1;
-  }
-   */
-  
 
 
 .mainSection{
     background-color: aquamarine;
     display: flex;
-    /* padding: 3%;
-    width: 92%; */
     margin: 0 auto;
 }
 
